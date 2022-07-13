@@ -1,0 +1,39 @@
+.agent {
+    background: url(../../img/agent/agent.png);
+    height: 342px;
+    padding-top: 58px;
+    &__circle {
+        width: 102px;
+        height: 102px;
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__title {
+        margin-top: 20px;
+        font-family: 'Roboto';
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 22px;
+        font-family: 'Roboto';
+        font-size: 19px;
+        line-height: 27px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+
+}
