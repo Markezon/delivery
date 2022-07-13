@@ -1,0 +1,31 @@
+.work {
+    padding-top: 20px;
+    min-height: 610px;
+    &__wrapper {
+        margin-top: 37px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        justify-content: space-between;
+        &-img {
+            object-fit: cover;
+        }
+        &-title {
+            margin-top: 28px;
+            font-family: 'Roboto';
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: $main-color;
+            text-align: center;
+        }
+        &-descr {
+            margin-top: 10px;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-weight: 300;
+            color: #3a3a3a;
+            text-align: justify;
+        }
+    }
+
+}
