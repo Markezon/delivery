@@ -1,0 +1,61 @@
+.consultation {
+    position: relative;
+    min-height: 345px;
+    &__title {
+        font-family: 'Roboto';
+        font-size: 28px;
+        line-height: 23px;
+        font-weight: 400;
+        color: #3a3a3a;
+        text-align: center;
+    }    
+    &__icon {
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin: 20px auto;
+        width: 102px;
+        height: 102px;
+        border: 1px solid $main-color;
+        border-radius: 100%;
+        background-color: #ffffff;
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            margin: 0 auto;
+            top: -5px;
+            left: -5px;
+            width: 112px;
+            height: 112px;
+            background-color: #ffffff;
+            border-radius: 100%;
+            z-index: -2;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            margin: 0 auto;
+            top: 0px;
+            width: 102px;
+            height: 102px;
+            border: 1px solid $main-color;
+            border-radius: 100%;
+        }
+        &-img {
+            display: block;
+            margin: 17px auto;
+            z-index: 10;
+        }
+    }
+    &__border {
+        top: 80px;
+        height: 166px;
+        width: 1140px;
+        border: 1px solid rgba(0,0,0,0.2);
+        z-index: -2;
+        position: absolute;
+
+    }
+}
