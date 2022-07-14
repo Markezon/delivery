@@ -68,6 +68,13 @@
         }
     }
     &__phone {
+        a {
+            text-decoration: none;
+            transition: all 0.5s;
+            &:hover {
+                color: $main-color;
+            }
+        }
         display: grid;
         grid-template-columns: 171px 171px;
         grid-template-rows: 22px 22px;
