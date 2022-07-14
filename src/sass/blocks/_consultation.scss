@@ -54,8 +54,13 @@
         height: 166px;
         width: 1140px;
         border: 1px solid rgba(0,0,0,0.2);
-        z-index: -2;
         position: absolute;
-
+        z-index: -2;
+        top: 94px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 19px;
     }
 }
