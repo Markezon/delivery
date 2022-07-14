@@ -1,0 +1,41 @@
+.scheme {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    &__wrapper {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        justify-content: center;
+        text-align: center;
+        column-gap: 38px;
+    }
+    &__wrapper2 {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+        text-align: center;
+        column-gap: 38px;
+    }
+    &__item {
+        &-icon {
+
+        }
+        &-title {
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: #ec644b;
+        }
+        &-subtitle {
+            font-family: 'Roboto';
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #3a3a3a;
+
+        }
+    }
+}
