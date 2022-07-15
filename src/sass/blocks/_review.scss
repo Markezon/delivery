@@ -1,0 +1,32 @@
+.review {
+
+}
+
+.carousel {
+    padding: 31px 0 65px 0;
+    &__inner {
+        width: 1400px;
+        margin: 0 auto;
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        margin-top: 19px;
+        font-family: 'Roboto';
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: #3a3a3a;
+    }
+    &__text {
+        margin-top: 3px;
+        font-family: 'Roboto';
+        line-height: 22px;
+        color: #3a3a3a;
+        font-size: 14.1px;
+        font-weight: 300;
+    }
+}
