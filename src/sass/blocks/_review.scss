@@ -1,32 +1,123 @@
 .review {
-
+	padding-top: 51px;
+	&__img {
+		width: 81px;
+		height: 81px;
+		display: block;
+		margin: 0 auto;
+	}
+	&__title {
+		margin-top: 19px;
+		text-align: center;
+		font-family: 'Roboto';
+		font-size: 12.85px;
+		line-height: 22px;
+		font-weight: 700;
+		color: #3a3a3a;
+	}
+	&__text {
+		margin-top: 3px;
+		text-align: center;
+		font-family: 'Roboto';
+		font-size: 10px;
+		font-weight: 300;
+		color: #3a3a3a;
+	}
+	button {
+		outline: none;
+	}
 }
 
-.carousel {
-    padding: 31px 0 65px 0;
-    &__inner {
-        width: 1400px;
-        margin: 0 auto;
-        text-align: center;
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-    &__title {
-        margin-top: 19px;
-        font-family: 'Roboto';
-        font-size: 18px;
-        line-height: 22px;
-        font-weight: 700;
-        color: #3a3a3a;
-    }
-    &__text {
-        margin-top: 3px;
-        font-family: 'Roboto';
-        line-height: 22px;
-        color: #3a3a3a;
-        font-size: 14.1px;
-        font-weight: 300;
-    }
+.card {
+	padding: 30px;
+	min-height: 300px;
+	color: #111;
+	font-size: 16px;
+}
+
+.slider-container {
+	max-width: 100%;
+	padding: 0 15px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	background-color: rgba($color: #ffffff, $alpha: 0.0);
+	width: 46px;
+	height: 46px;
+	border-radius: 100%;
+	border: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 46px 46px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev {
+	left: 715px;
+	top: 136px;
+	background-image: url("../../icons/reviews/left.svg");
+	&:hover {
+		transition: all 0.5s;
+		transform: scale(1.2);
+	}
+}
+
+.swiper-button-next {
+	right: 715px;
+	top: 136px;
+	background-image: url("../../icons/reviews/right.svg");
+	&:hover {
+		transition: all 0.5s;
+		transform: scale(1.2);
+	}
+}
+
+.slider-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.slider-buttons {
+	display: flex;
+	align-items: center;
+}
+
+
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+	background-color: tomato;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+.swiper	{
+	padding: 70px 0;
+}
+
+.swiper-slide {
+	transition: all 0.5s;
+	opacity: 0.5;
+}
+
+.swiper-slide.card.swiper-slide-active {
+	opacity: 1;
+	transition: all 0.5s;
+	transform: scale(1.4);
+
 }
