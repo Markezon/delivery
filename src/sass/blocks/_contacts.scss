@@ -34,6 +34,16 @@
         }
     }
     &__form {
-        
+        padding-top: 17px;
+        margin: 0 auto;
+        width: 896px;
+        height: 230px;
+        background-color: rgba($color: #ffff, $alpha: 0.7);
     }
+    &__btn {
+        grid-column: 2 / 3;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }   
 }
