@@ -1,0 +1,39 @@
+.contacts {
+    padding-top: 62px;
+    min-height: 438px;
+    background: url(../../img/contacts/contacts_bg.png);
+    &__header {
+        width: 896px;
+        height: 68px;
+        background-color: #25333c;
+        margin: 0 auto;
+        font-family: 'Roboto';
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        &-title {
+            margin-top: 20px;
+            height: 14px;
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 19px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        &-subtitle {
+            margin-top: 5px;
+            height: 10px;
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }
+    &__form {
+        
+    }
+}
