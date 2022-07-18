@@ -93,3 +93,28 @@ validation
   });
 
 
+
+  
+
+$(document).ready(function(){
+
+
+  function toggleSlide(item) {
+    $(item).each(function(i) {
+      $(this).on('click', function(e) {
+        e.preventDefault();
+        $('.rates__item-first').eq(i).toggleClass('rates__item-first_active');
+        $('.rates__item-second').eq(i).toggleClass('rates__item-second_active');
+      })
+    });
+  };
+
+  toggleSlide('.rates__item-btn');
+  toggleSlide('.rates__item-btnback');
+
+});
+  
+  
+  
+  
+  
