@@ -14,19 +14,46 @@
 </head>
 <body>
 
-	<section class="promo">
+	<div class="menu">
+		<div class="menu__block">
+			<div class="menu__close">
+				<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+				</svg>
+			</div>
+			
+			<nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#pr">Преимущества</a></li>
+                    <li class="menu__link"><a href="#wo">Наша работа</a></li>
+                    <li class="menu__link"><a href="#pri">Цены</a></li>
+                    <li class="menu__link"><a href="#sch">Схема работы</a></li>
+                    <li class="menu__link"><a href="#re">Отзывы</a></li>
+                    <li class="menu__link"><a href="#co">Контакты</a></li>
+                </ul>
+            </nav>
+		</div>
+		<div class="menu__overlay"></div>
+	</div>
+
+	<section id="up" class="promo">
+		<div class="hamburger">
+			<span></span>
+			<span class="long"></span>
+			<span></span>
+		</div>
 		<div class="container">
 			<div class="promo__header">
 				<div class="promo__logo">
 					<a href="#"><img src="icons/promo/logo.png" alt="logo" /></a>
 				</div>
 				<ul class="promo__menu">
-					<li class="promo__menu_item"><a href="#" class="promo__menu_link">Преимущества</a></li>
-					<li class="promo__menu_item"><a href="#" class="promo__menu_link">Наша работа</a></li>
-					<li class="promo__menu_item"><a href="#" class="promo__menu_link">Цены</a></li>
-					<li class="promo__menu_item"><a href="#" class="promo__menu_link">Схема работы</a></li>
-					<li class="promo__menu_item"><a href="#" class="promo__menu_link">Отзывы</a></li>
-					<li class="promo__menu_item"><a href="#" class="promo__menu_link">Контакты</a></li>
+					<li class="promo__menu_item"><a href="#pr" class="promo__menu_link">Преимущества</a></li>
+					<li class="promo__menu_item"><a href="#wo" class="promo__menu_link">Наша работа</a></li>
+					<li class="promo__menu_item"><a href="#pri" class="promo__menu_link">Цены</a></li>
+					<li class="promo__menu_item"><a href="#sch" class="promo__menu_link">Схема работы</a></li>
+					<li class="promo__menu_item"><a href="#re" class="promo__menu_link">Отзывы</a></li>
+					<li class="promo__menu_item"><a href="#co" class="promo__menu_link">Контакты</a></li>
 				</ul>
 				<div class="promo__phone">
 					<div class="promo__phone_title">Есть вопросы?</div>
@@ -63,7 +90,7 @@
 		</div>
 	</section>
 		
-	<section class="benefits">
+	<section id="pr" class="benefits">
 		<div class="container">
 			<div class="benefits__title title">
 				Преимущества работы с GlobalOpt
@@ -169,7 +196,7 @@
 		</div>
 	</section>
 
-	<section class="work">
+	<section id="wo" class="work">
 		<div class="container">
 			<div class="work__title title">
 				Наша работа - больше чем просто доставка
@@ -227,7 +254,7 @@
 		</div>
 	</section>
 
-	<section class="rates">
+	<section id="pri" class="rates">
 		<div class="container">
 			<div class="reates__title title">Цены на любой вариант доставки</div>
 			<div class="rates__divider divider"></div>
@@ -400,7 +427,7 @@
 		</div>
 	</section>
 
-	<section class="scheme">
+	<section id="sch" class="scheme">
 		<div class="container">
 			<div class="scheme__title title">
 				Схема работы с нами
@@ -501,7 +528,7 @@
 		</div>
 	</section>
 
-	<section class="review">
+	<section id="re" class="review">
 		<div class="container">
 			<div class="reates__title title">отзывы наших клиентов</div>
 			<div class="rates__divider divider"></div>
@@ -560,7 +587,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section id="co" class="contacts">
 		<div class="container">
 
 			<div class="contacts__header">
@@ -635,7 +662,7 @@
 	
 
     <a href="#up" class="pageup">
-		<img src="icons/up.svg" alt="up">
+		<img src="icons/up-del.svg" alt="up">
 	</a>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

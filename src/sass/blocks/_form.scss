@@ -8,6 +8,7 @@
     column-gap: 4px;
     justify-content: space-between;
     &__item {
+        position: relative;
         .input {
             outline: 0;
             width: 100%;
@@ -22,6 +23,16 @@
             line-height: 24px;
             font-weight: 300;
             color: #101010;
+            &:focus {    
+                transition: all 0.5s;
+                box-shadow: 0 0 10px $main-color;
+            }
+        }
+        .just-validate-error-label {
+            position: absolute;
+            font-size: 10px;
+            top: -12px;
+            left: 33px;
         }
     }
     &__textarea {
