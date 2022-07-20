@@ -60,8 +60,6 @@
 }
 
 .swiper-button-prev {
-	left: 660px;
-	top: 136px;
 	background-image: url("../../icons/reviews/left.svg");
 	&:hover {
 		transition: all 0.5s;
@@ -70,8 +68,6 @@
 }
 
 .swiper-button-next {
-	right: 660px;
-	top: 136px;
 	background-image: url("../../icons/reviews/right.svg");
 	&:hover {
 		transition: all 0.5s;
