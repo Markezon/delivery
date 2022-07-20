@@ -13,6 +13,7 @@ validation
     {
       rule: 'minLength',
       value: 2,
+      errorMessage: 'minimum of 2 characters'
     },
     {
       rule: 'maxLength',
@@ -24,6 +25,13 @@ validation
       errorMessage: 'Введите имя!'
     }
   ])
+  .addField('.input-policy', [
+    {
+      rule: 'required',
+      value: true,
+      errorMessage: 'Please agree'
+    }
+    ])
   .addField('.input-mail', [
     {
       rule: 'required',
