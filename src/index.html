@@ -57,7 +57,8 @@
 				</ul>
 				<div class="promo__phone">
 					<div class="promo__phone_title">Есть вопросы?</div>
-					<a href="tel:89264230100" class="promo__phone_number">+7 (926) 423 01 00 </a><button class="promo__phone_btn btn">Перезвоните мне</button>
+					<a href="tel:89264230100" class="promo__phone_number">+7 (926) 423 01 00 </a> 
+					<button data-modal="consultation" class="promo__phone_btn btn">Перезвоните мне</button>
 				</div>
 			</div>
 			<h3>Global Opt - логистика полного цикла из Китая в Россию</h3>
@@ -86,7 +87,7 @@
 					<div class="promo__wrapper-descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
 				</div>
 			</div>
-			<button class="promo__btn btn">Получить расчет</button>
+			<button data-modal="consultation" class="promo__btn btn">Получить расчет</button>
 		</div>
 	</section>
 		
@@ -682,8 +683,40 @@
 		</div>
 	</footer>
 
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+			<form action="#" class="form form__modal" method="POST">
+				<div class="form__item form__item-name">
+					<input class="input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+				</div>
+				<div class="form__item form__item-mail">
+					<input class="input input-mail" type="email" data-validate-field="email" name="Email"
+					placeholder="Введите email">
+				</div>
+				<div class="form__item form__item-tel">
+					<input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон"
+					placeholder="Введите телефон">
+				</div>
+				<div class="form__btn form__btn-modal">
+					<button class="btn button_submit">Отправить заявку</button>
+				</div>
+				<div class="form__policy form__policy-modal">
+					<input id="formAgreement" checked type="checkbox" name="agreement" class="form__policy-input input-policy">
+					<label for="formAgreement" class="form__policy-label"><span><font color="red">*</font>I Agree to <a href="/policy.html">Privacy Policy</a></span></label>
+				</div> 				
+			</form>
+		</div>
 
-	
+		<div class="modal modal_mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами 
+				в ближайшее время!</div>
+		</div>
+	</div>	
 
     <a href="#up" class="pageup">
 		<img src="icons/up-del.svg" alt="up">

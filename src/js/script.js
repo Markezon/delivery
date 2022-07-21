@@ -135,6 +135,19 @@ $(document).ready(function(){
   toggleSlide('.rates__item-btnback');
 
 
+  //Modal
+
+	$('[data-modal=consultation]').on('click', function() {
+		$('.overlay, #consultation').fadeIn('slow');
+	});
+	$('.modal__close').on('click', function() {
+		$('.overlay, #consultation, #thanks').fadeOut('slow');
+	});
+
+
+
+  //scroll
+
   $(window).scroll(function() {
 		if ($(this).scrollTop() > 600) {
 			$('.hamburger').fadeIn();
