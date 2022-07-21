@@ -149,14 +149,6 @@ $(document).ready(function(){
   //scroll
 
   $(window).scroll(function() {
-		if ($(this).scrollTop() > 600) {
-			$('.hamburger').fadeIn();
-		} else {
-			$('.hamburger').fadeOut();
-		}
-	});
-
-  $(window).scroll(function() {
 		if ($(this).scrollTop() > 1000) {
 			$('.pageup').fadeIn();
 		} else {

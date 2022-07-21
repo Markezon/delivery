@@ -1,21 +1,183 @@
-@media (max-width: 1439px) {
-	.sidepanel {
+/* @media (min-width: 1201px) {
+	.hamburger {
 		display: none;
 	}
-}
+
+} */
 
 @media (max-width: 1200px) {
+	.container {
+		width: 100%;
+	}
+	.promo {
+		
+		&__header {
+			padding-top: 5px;
+			grid-template-columns: 1fr;
+			grid-template-rows: 25px 50px 80px;
+			row-gap: 10px;
+		}
+		&__menu {
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
+			padding: 0;
+			width: 587px;
+			&_media {
+				justify-self: center;
+			}
+		}
+		&__phone {
+			margin: 0;
+			justify-self: center;
+			grid-row: 2 / 3;
+			grid-column: 1 / 2;
+		}
+		&__logo {
+			justify-self: center;
+			grid-row: 3 / 4;
+			grid-column: 1 / 2;
+		}
+		&__img {
+			height: 100%;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		h1 {
+			margin-top: 0;
+			font-size: 50px;
+		}
+		h2 {
+			margin-top: 0px;
+			font-size: 35px;
+		}
+		&__divider {
+			margin: 0;
+			width: 100%;
+			padding-top: 10px;
+			
+
+		}
+		&__line {
+			width: 45%;
+		}
+		&__dot {
+
+		}
+		&__wrapper {
+			grid-template-columns: repeat(2, 2fr);
+			grid-template-rows: repeat(2, 125px);
+			row-gap: 10px;
+			&-item {
+				padding: 0 10px 0 10px;
+			}
+		}
+		&__btn.btn {
+			margin: 0 auto;
+			width: 190px;
+			height: 45px;
+		}
+	}
+
+
 
 }
 
 @media (max-width: 992px) {
+	.menu {
+		&__block {
+			padding-top: 60px;
+			padding-left: 10px;
+			width: 320px;
+		}
+		&__list {
+			width: 70%;
+		}
+	}
 
 }
 
 @media (max-width: 768px) {
+	.promo {
+		&__menu {
+			display: none;
+		}
+		&__header {
+			padding-top: 10px;
+			grid-template-rows:50px 70px;
+			row-gap: 10px;
+		}
+		&__phone {
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
+		}
+		&__logo {
+			grid-row: 2 / 3;
+			grid-column: 1 / 2;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		h1 {
+			font-size: 28px;
+		}
+		h2 {
+			font-size: 24px;
+		}
+		&__wrapper {
+			&-descr {
+
+			}
+		}
+	}
 
 }
 
 @media (max-width: 576px) {
+	.promo {
+		&__header {
+			grid-template-rows:5px 70px;
+			row-gap: 10px;
+		}
+		&__phone {
+			display: none;
+		}
+		h3 {
+			font-size: 12px;
+		}
+		h1 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		&__divider {
+			display: none;
+		}
+		&__wrapper {
+			margin-top: 15px;
+			grid-template-columns: 1fr;
+			grid-template-rows:80px 105px 80px 80px 10px;
+			row-gap: 15px;
+			&-item {
+				text-align: center;
+			}
+			&-descr {
+				font-family: 'Roboto';
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: 300;
+				color: #ffffff;
+			}
+		}
+	}
+	.menu {
+		&__block {
+			padding-top: 15px;
+		}
+		&__close {
+			top: 45px;
+		}
+	}
 
 }
