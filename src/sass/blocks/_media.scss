@@ -132,6 +132,14 @@
 			}       
 		}
 	}
+	.agent {
+		&__title {
+			font-size: 22px;
+		}
+		&__subtitle {
+			font-size: 18px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -194,6 +202,7 @@
 			} 
 		}
 	}
+
 
 }
 
@@ -273,6 +282,15 @@
 				margin: 10px;
 				font-size: 12px;
 			}  
+		}
+	}
+	.agent {
+		padding-top: 30px;
+		&__title {
+			font-size: 18px;
+		}
+		&__subtitle {
+			font-size: 16px;
 		}
 	}
 
