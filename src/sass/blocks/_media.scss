@@ -1,9 +1,9 @@
-@media (min-width: 1201px) {
+/* @media (min-width: 1201px) {
 	.hamburger {
 		display: none;
 	}
 
-}
+} */
 
 @media (max-width: 1200px) {
 	.container {
@@ -118,6 +118,14 @@
 			column-gap: 50px;	
 		}
 	}
+	.consultation {
+		&__title {
+			padding-top: 30px;
+		}
+		&__border {
+			display: none;
+		}
+	}
 
 }
 
@@ -148,6 +156,55 @@
 			font-size: 18px;
 		}
 	}
+	.contacts {
+		background: #b4adad;
+		&__header {
+			width: 100%;
+		}
+		&__form {
+			padding-top: 30px;
+			height: 430px;
+			width: 100%;
+		}
+		.form {
+			width: 320px;
+			grid-template-columns: 314px;
+			grid-template-rows: 47px 47px 47px 75px 50px 50px;
+			row-gap: 15px;
+			column-gap: 4px;
+			justify-content: center;
+			&__item {
+				position: relative;
+		        &-name {
+					grid-row: 1 / 2;
+					grid-column: 1 / 2;
+				}
+				&-mail {
+					grid-row: 2 / 3;
+					grid-column: 1 / 2;
+				}
+				&-tel {
+					grid-row: 3 / 4;
+					grid-column: 1 / 2;
+				}
+			}
+			&__textarea {
+				grid-column: 1 / 2;
+				grid-row: 4 / 5;
+			}
+			&__policy {
+				grid-column: 1 / 2;
+				grid-row: 5 / 6;
+			}
+		}
+		&__btn {
+			grid-column: 1 / 2;
+			grid-row: 6 / 7;
+			margin-top: 0px;
+		} 
+
+	}
+
 }
 
 @media (max-width: 768px) {
