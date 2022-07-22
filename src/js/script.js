@@ -105,9 +105,12 @@ validation
     },
   });
 
+  //hamburger
+
   const hamburger = document.querySelector('.hamburger'),
 	menu = document.querySelector('.menu'),
-	closeElem = document.querySelector('.menu__close');
+	closeElem = document.querySelector('.menu__close'),
+  closeElem2 = document.querySelector('.overlay__close');
 
   hamburger.addEventListener('click', () => {
     menu.classList.add('active'),
@@ -115,6 +118,11 @@ validation
   });
 
   closeElem.addEventListener('click', () => {
+    menu.classList.remove('active'),
+    hamburger.classList.remove('rotate');
+  });
+
+  closeElem2.addEventListener('click', () => {
     menu.classList.remove('active'),
     hamburger.classList.remove('rotate');
   });
