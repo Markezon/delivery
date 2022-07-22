@@ -145,6 +145,45 @@
 			row-gap: 20px;
 		}
 	}
+	.footer {
+		&__wrapper {
+			padding-top: 24px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 71px 40px 71px 12px 30px;
+		}
+		&__logo {
+			width: 68px;
+			display: block;
+			margin: 0 auto;
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+			&-text {
+				padding-top: 10px;
+				padding-left: 0;
+				grid-column: 1 / 2;
+				grid-row: 2 / 3;
+				display: block;
+				margin: 0 auto;
+				text-align: center;	
+			}
+		}
+		&__promo {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+			margin-top: 20px;
+		}
+		&__divider {
+			grid-row: 4 / 5;
+			grid-column: 1 / 2;
+			width: 100%;
+	
+		}
+		&__policy {
+			grid-row: 5 / 6;
+			grid-column: 1 / 2;	
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -182,7 +221,7 @@
 		}
 		&__form {
 			padding-top: 30px;
-			height: 430px;
+			height: 630px;
 			width: 100%;
 		}
 		.form {
@@ -242,20 +281,18 @@
 	}
 	.review {
 		padding-top: 20px;
-		&__img {
-			width: 81px;
-			height: 81px;
-			display: block;
-			margin: 0 auto;
-		}
 		&__title {
 			font-size: 16px;
 		}
 		&__text {
 			font-size: 14px;
 		}
-		button {
-			outline: none;
+	}
+	.footer {
+		&__info {
+			top: -150px;
+			width: 100%;
+			background-color: rgba(189, 185, 182, 0.9);
 		}
 	}
 }
@@ -325,6 +362,13 @@
 			column-gap: 20px;	
 		}
 	}
+	.footer {
+		&__promo {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+			margin-top: 20px;
+		}
+	}
 }
 
 @media (max-width: 576px) {
@@ -333,7 +377,7 @@
 			grid-template-rows:5px 70px;
 			row-gap: 10px;
 		}
-		&__phone {
+		&__phone.none {
 			display: none;
 		}
 		h3 {
@@ -440,5 +484,53 @@
 			row-gap: 20px;
 		}
 	}
+	.footer {
+		&__wrapper {
+			grid-template-columns: 1fr;
+			grid-template-rows: 71px 50px 120px 12px 30px;
+			justify-content: center;			
+		}
+		&__logo {
+			width: 68px;
+			grid-column: 1 / 2;
+			&-text {
+				width: 200px;
+				font-size: 12px;
+				line-height: 20px;
+				font-weight: 700;
+	
+			}
+		}
+		&__promo {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+			margin-top: 20px;
+			grid-template-columns: 1fr;
+			grid-template-rows: 20px 30px 46px;
+			.promo__phone_title {
+				grid-column: 1 / 2;
+				grid-row: 1 / 2;
+				text-align: center;
+				width: 100%;
+			}
+			.promo__phone_number {
+				grid-column: 1 / 2;
+				grid-row: 2 / 3;
+				text-align: center;
+			}
+			.promo__phone_btn {
+				grid-column: 1 / 2;
+				grid-row: 3 / 4;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&__info {
 
+		}
+
+	}
+	.promo__phone.footer__promo {
+		width: 100%;
+	}
 }
