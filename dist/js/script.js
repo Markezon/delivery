@@ -86,9 +86,7 @@ validation
   const slider = document.querySelector('.swiper-container');
 
   let swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    spaceBetween: 50,
-    centeredSlides: true,
+    slidesPerView: 1,
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -97,6 +95,13 @@ validation
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 50,
+      }
     },
   });
 

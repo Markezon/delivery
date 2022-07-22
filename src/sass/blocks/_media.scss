@@ -234,6 +234,30 @@
 			line-height: 20px;
 		}
 	}
+	.swiper-slide.card.swiper-slide-active {
+		transform: scale(1);
+	}
+	.swiper {
+		padding: 0;
+	}
+	.review {
+		padding-top: 20px;
+		&__img {
+			width: 81px;
+			height: 81px;
+			display: block;
+			margin: 0 auto;
+		}
+		&__title {
+			font-size: 16px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+		button {
+			outline: none;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -416,4 +440,5 @@
 			row-gap: 20px;
 		}
 	}
+
 }
